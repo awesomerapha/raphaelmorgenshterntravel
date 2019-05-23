@@ -128,6 +128,7 @@ margin-left: -1px;
 }
 @media screen and (max-width: 990px) {
 .flex-container {
+	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
 }

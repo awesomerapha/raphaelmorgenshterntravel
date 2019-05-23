@@ -1,7 +1,7 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["exciting.", "fun.", "a journey.", "LIFE."];
+const textArray = ["great.", "fun.", "LIFE."];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000; // Delay between current and next text
@@ -39,3 +39,17 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+var button = document.querySelector('.trigger'),
+    items = document.querySelectorAll('li');
+var openCloseMenu = function() {
+  for(i=0; i < items.length; i++){
+    items[i].classList.toggle('slideout');
+  }
+}
+button.onclick = openCloseMenu;
+
+/* jQuery */
+/*$('.trigger').on('click', function(){
+  $('.cn-wrapper li').toggleClass('slideout');
+});
+*/
