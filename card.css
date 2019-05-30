@@ -4,11 +4,12 @@ html{
 	margin-top: 75px;
 display: flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: center;
 }
 
 .flip-card {
-	
+	margin-right: 30px;
+	margin-left: 30px;
 	background-color: transparent;
 	width: 300px;
 	height: 400px;

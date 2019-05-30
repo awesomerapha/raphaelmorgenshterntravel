@@ -39,17 +39,3 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
-var button = document.querySelector('.trigger'),
-    items = document.querySelectorAll('li');
-var openCloseMenu = function() {
-  for(i=0; i < items.length; i++){
-    items[i].classList.toggle('slideout');
-  }
-}
-button.onclick = openCloseMenu;
-
-/* jQuery */
-/*$('.trigger').on('click', function(){
-  $('.cn-wrapper li').toggleClass('slideout');
-});
-*/
